@@ -12,6 +12,8 @@ IF NOT EXIST %CLASSES% (
     IF ERRORLEVEL 1 GOTO FAILURE
 )
 
+
+
 javac -sourcepath . -d %CLASSES% -encoding UTF-8 java_01.java
 IF ERRORLEVEL 1 GOTO FAILURE
 
